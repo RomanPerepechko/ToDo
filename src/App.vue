@@ -3,8 +3,6 @@
     <ToDoList @check-to-do="checkToDo" :data="toDoList" />
     <FormAdd @create-to-do="addToDo" />
   </div>
-
-
 </template>
 
 <script>
@@ -25,8 +23,8 @@ export default {
     }
   },
   methods: {
-    addToDo(payload) {
-      this.toDoList.push({ id: Math.random(), title: payload, check: false })
+    addToDo(title) {
+      this.toDoList.push({ id: Math.random(), title: title, check: false })
     },
     checkToDo(id) {
       this.toDoList.forEach(el => {

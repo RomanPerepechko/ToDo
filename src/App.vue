@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div>
     <ToDoList @check-to-do="checkToDo" :data="toDoList" />
     <FormAdd @create-to-do="addToDo" />
   </div>
@@ -45,7 +45,4 @@ export default {
 </script>
 
 <style scoped>
-.main-block {
-  display: flex;
-}
 </style>

@@ -29,8 +29,4 @@ export default {
     margin-bottom: 20px;
     align-items: center;
 }
-.main-block{
-    flex-direction: column;
-}
-
 </style>
